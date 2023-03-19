@@ -7,62 +7,64 @@
 
     <body>
         <div id="wrapper">
-            <form id="form_consulta" method="post" autocomplete="on">
-                <div class="row title">
-                    <img src="img/logo-htc.png"> Solicitud de Prórroga
-                </div>
-                <div class="row">
-                    <div class="field_label">
-                        <label for="cb_municipios">Municipio</label>
+            <div id="div_form">
+                <form id="form_consulta" method="post" autocomplete="on">
+                    <div class="row title">
+                        <img src="img/logo-htc.png"> Solicitud de Prórroga
                     </div>
-                    <div class="field_data">
-                        <select name="municipios" id="cb_municipios">
-                            <option value="pos">Posadas</option>
-                            <option value="obe">Oberá</option>
-                            <option value="apo">Apóstoles</option>
-                        </select>
+                    <div class="row">
+                        <div class="field_label">
+                            <label for="cb_municipios">Municipio</label>
+                        </div>
+                        <div class="field_data">
+                            <select name="municipios" id="cb_municipios">
+                                <option value="pos">Posadas</option>
+                                <option value="obe">Oberá</option>
+                                <option value="apo">Apóstoles</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="field_label">
-                        <label for="cb_periodos">Periodo</label>
+                    <div class="row">
+                        <div class="field_label">
+                            <label for="cb_periodos">Periodo</label>
+                        </div>
+                        <div class="field_data">
+                            <select name="periodos" id="cb_periodos">
+                                <option value="1">1er trimestre</option>
+                                <option value="2">2do trimestre</option>
+                                <option value="3">3er trimestre</option>
+                                <option value="4">4to trimestre</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="field_data">
-                        <select name="periodos" id="cb_periodos">
-                            <option value="1">1er trimestre</option>
-                            <option value="2">2do trimestre</option>
-                            <option value="3">3er trimestre</option>
-                            <option value="4">4to trimestre</option>
-                        </select>
+                    <div class="row">
+                        <div class="field_label">
+                            <label for="cb_anios">Año</label>
+                        </div>
+                        <div class="field_data">
+                            <select name="anios" id="cb_anios">
+                                <option value="20">2020</option>
+                                <option value="21">2021</option>
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="field_label">
-                        <label for="cb_anios">Año</label>
+                    <div class="row">
+                        <div class="field_label">
+                            <label for="txt_motivo">Motivo</label>
+                        </div>
+                        <div class="field_data">
+                            <textarea id="txt_motivo" placeholder="Escriba su motivo aquí..."></textarea>
+                        </div>
                     </div>
-                    <div class="field_data">
-                        <select name="anios" id="cb_anios">
-                            <option value="20">2020</option>
-                            <option value="21">2021</option>
-                            <option value="22">2022</option>
-                            <option value="23">2023</option>
-                            <option value="24">2024</option>
-                        </select>
+                    <div class="row title">
+                        <button class="btn" type="reset">Limpiar</button>
+                        <button class="btn" type="submit">Enviar</button>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="field_label">
-                        <label for="txt_motivo">Motivo</label>
-                    </div>
-                    <div class="field_data">
-                        <textarea id="txt_motivo" placeholder="Escriba su motivo aquí..."></textarea>
-                    </div>
-                </div>
-                <div class="row title">
-                    <button class="btn" type="reset">Limpiar</button>
-                    <button class="btn" type="submit">Enviar</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </body>
 </html>
