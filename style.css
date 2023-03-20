@@ -1,0 +1,17 @@
+body {
+    background-color: #0d1117;
+}
+
+div {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+#div_form {
+    flex-direction: column;
+    width: 80vw;
+    background-color: #4e6fa0;
+}
